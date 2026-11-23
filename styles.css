@@ -364,6 +364,28 @@ footer{background:#061d43;color:#c2ccdc;padding:68px 0 20px}footer a{display:blo
   .expertise-grid{grid-template-columns:1fr}
 }
 
+.training-page-hero .page-hero-grid{grid-template-columns:1fr;gap:0;min-height:0;padding-top:48px}
+.training-page-hero .page-hero-grid>div{max-width:850px}
+.training-page-hero h1{max-width:760px}
+.training-page-hero .page-hero-grid>img{width:100%;height:380px;margin-top:30px;object-fit:cover;border-radius:10px}
+.international-opportunities{padding:42px 0;background:#f5f7fb}
+.international-card{display:grid;grid-template-columns:170px minmax(0,1fr);gap:30px;align-items:start;padding:32px;background:#fff;border-left:5px solid var(--yellow);border-radius:6px;box-shadow:0 12px 35px rgba(16,33,63,.06)}
+.international-mark{display:grid;place-content:center;min-height:120px;background:var(--navy);color:var(--yellow);border-radius:5px;font:900 24px "Montserrat";letter-spacing:.5px}
+.international-mark span{color:#fff}
+.international-card .section-label{font-size:10px}
+.international-card h2{font:800 25px/1.2 "Montserrat";color:var(--navy);margin:10px 0 12px}
+.international-card p{color:var(--muted);font-size:13px;line-height:1.75;margin:0}
+.international-card .international-note{margin-top:10px;font-size:11px}
+@media(max-width:900px){.training-page-hero .page-hero-grid{grid-template-columns:1fr}}
+@media(max-width:560px){
+  .training-page-hero .page-hero-grid{padding-top:32px}
+  .training-page-hero .page-hero-grid>img{height:250px;margin-top:22px}
+  .international-opportunities{padding:26px 0}
+  .international-card{grid-template-columns:1fr;gap:18px;padding:22px}
+  .international-mark{min-height:64px}
+  .international-card h2{font-size:21px}
+}
+
 .language-switch{
   position:relative;
   display:flex;

@@ -448,7 +448,19 @@ const translations = {
     'Comptabilité informatisée de gestion, banque et microfinance.':'Computerized management accounting, banking and microfinance.',
     'Douane et transit, transport et logistique.':'Customs and transit, transport and logistics.',
     'Organisation administrative, rédaction et outils bureautiques.':'Administrative organization, writing and office software.',
-    'Voir toutes les formations':'View all programs'
+    'Voir toutes les formations':'View all programs',
+    'Des compétences pour élargir vos horizons':'Skills to broaden your horizons',
+    'Construisez votre avenir professionnel, ici et au-delà des frontières.':'Build your professional future, here and beyond borders.',
+    'Les compétences acquises et un DQP ou un CQP peuvent soutenir un projet d’emploi ou de poursuite d’études à l’international. La reconnaissance du diplôme et l’accès à ces opportunités dépendent des règles du pays d’accueil, des établissements, des employeurs et des visas.':'The skills you gain and a DQP or CQP may support plans to work or continue your studies internationally. Diploma recognition and access to these opportunities depend on the rules of the destination country, educational institutions, employers and visa requirements.',
+    'Avant votre départ, renseignez-vous auprès des autorités et organismes compétents du pays visé sur l’équivalence du diplôme et les conditions d’admission ou d’emploi.':'Before making plans, check diploma equivalency and admission or employment requirements with the relevant authorities and organizations in your destination country.',
+    'Appel : +237 658 813 181':'Call: +237 658 813 181',
+    'WhatsApp : +237 681 574 613':'WhatsApp: +237 681 574 613',
+    'WhatsApp : +237 681 574 613 →':'WhatsApp: +237 681 574 613 →',
+    'Appel :':'Call:',
+    'WhatsApp :':'WhatsApp:',
+    'Téléphone / WhatsApp *':'Phone / WhatsApp *',
+    'Indicatif du Cameroun':'Cameroon country code',
+    '+237 6XX XXX XXX':'+237 6XX XXX XXX'
   }
 };
 
