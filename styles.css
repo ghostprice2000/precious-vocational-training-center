@@ -364,10 +364,24 @@ footer{background:#061d43;color:#c2ccdc;padding:68px 0 20px}footer a{display:blo
   .expertise-grid{grid-template-columns:1fr}
 }
 
-.training-page-hero .page-hero-grid{grid-template-columns:1fr;gap:0;min-height:0;padding-top:48px}
-.training-page-hero .page-hero-grid>div{max-width:850px}
-.training-page-hero h1{max-width:760px}
-.training-page-hero .page-hero-grid>img{width:100%;height:380px;margin-top:30px;object-fit:cover;border-radius:10px}
+.training-page-hero{padding:0 0 64px;background:radial-gradient(circle at 88% 16%,rgba(255,196,0,.15),transparent 22%),linear-gradient(135deg,#f4f7fb,#fff 70%)}
+.training-page-hero .page-hero-grid{grid-template-columns:1fr;gap:34px;min-height:0;padding-top:52px}
+.training-hero-copy{max-width:900px}
+.training-page-hero .eyebrow{margin-bottom:18px}
+.training-page-hero h1{max-width:850px;font-size:clamp(44px,6vw,72px);line-height:1.04}
+.training-page-hero p{max-width:740px;margin:18px 0 22px}
+.training-hero-facts{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 24px}
+.training-hero-facts span{display:inline-flex;align-items:center;gap:7px;padding:9px 13px;background:#fff;border:1px solid #e6ebf2;border-radius:4px;color:var(--muted);font-size:12px}
+.training-hero-facts strong{color:var(--navy);font-family:"Montserrat";font-size:13px}
+.training-hero-actions{gap:22px}
+.training-hero-actions .text-link{display:inline-flex;align-items:center;gap:8px}
+.training-hero-visual{position:relative;overflow:hidden;border-radius:10px;box-shadow:0 22px 55px rgba(8,45,112,.14)}
+.training-page-hero .training-hero-visual>img{width:100%;height:clamp(260px,38vw,440px);object-fit:cover;border-radius:10px}
+.training-image-caption{position:absolute;left:24px;bottom:24px;display:flex;align-items:center;gap:13px;padding:14px 18px;background:#fff;border-radius:5px;box-shadow:0 10px 28px rgba(16,33,63,.16)}
+.training-image-caption>span{display:grid;place-items:center;width:44px;height:44px;background:var(--yellow);color:var(--navy);font:900 20px "Montserrat";border-radius:4px}
+.training-image-caption strong,.training-image-caption small{display:block}
+.training-image-caption strong{font:800 13px "Montserrat";color:var(--navy)}
+.training-image-caption small{margin-top:4px;color:var(--muted);font-size:11px}
 .international-opportunities{padding:42px 0;background:#f5f7fb}
 .international-card{display:grid;grid-template-columns:170px minmax(0,1fr);gap:30px;align-items:start;padding:32px;background:#fff;border-left:5px solid var(--yellow);border-radius:6px;box-shadow:0 12px 35px rgba(16,33,63,.06)}
 .international-mark{display:grid;place-content:center;min-height:120px;background:var(--navy);color:var(--yellow);border-radius:5px;font:900 24px "Montserrat";letter-spacing:.5px}
@@ -378,13 +392,40 @@ footer{background:#061d43;color:#c2ccdc;padding:68px 0 20px}footer a{display:blo
 .international-card .international-note{margin-top:10px;font-size:11px}
 @media(max-width:900px){.training-page-hero .page-hero-grid{grid-template-columns:1fr}}
 @media(max-width:560px){
-  .training-page-hero .page-hero-grid{padding-top:32px}
-  .training-page-hero .page-hero-grid>img{height:250px;margin-top:22px}
+  .training-page-hero{padding-bottom:36px}
+  .training-page-hero .page-hero-grid{padding-top:32px;gap:24px}
+  .training-page-hero h1{font-size:40px}
+  .training-hero-facts{gap:7px}
+  .training-hero-facts span{padding:8px 9px;font-size:10px}
+  .training-hero-actions{align-items:flex-start;flex-direction:column;gap:16px}
+  .training-hero-visual{border-radius:7px}
+  .training-page-hero .training-hero-visual>img{height:230px;border-radius:7px}
+  .training-image-caption{left:12px;bottom:12px;padding:9px 11px;gap:9px}
+  .training-image-caption>span{width:36px;height:36px;font-size:17px}
+  .training-image-caption strong{font-size:11px}
+  .training-image-caption small{font-size:10px}
   .international-opportunities{padding:26px 0}
   .international-card{grid-template-columns:1fr;gap:18px;padding:22px}
   .international-mark{min-height:64px}
   .international-card h2{font-size:21px}
 }
+
+.mobility-section{padding:92px 0;background:var(--navy);color:#fff}
+.mobility-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:70px;align-items:center}
+.mobility-copy .section-label{color:var(--yellow)}
+.mobility-copy h2{max-width:600px;margin:14px 0 18px;font:800 clamp(32px,4vw,48px)/1.12 "Montserrat";letter-spacing:-1.6px}
+.mobility-copy>p{max-width:600px;color:#d0daea;font-size:14px;line-height:1.8}
+.mobility-copy .button{margin-top:10px}
+.mobility-copy .mobility-note{margin-top:22px;color:#aebdd4;font-size:11px;line-height:1.65}
+.mobility-path{padding:24px 28px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:7px}
+.mobility-path-header{display:flex;justify-content:space-between;align-items:center;padding-bottom:18px;color:#fff;font:800 13px "Montserrat"}
+.mobility-path-header strong{color:var(--yellow);font-size:11px}
+.mobility-path article{display:grid;grid-template-columns:38px 1fr;gap:14px;padding:18px 0;border-top:1px solid rgba(255,255,255,.15)}
+.mobility-path article>span{color:var(--yellow);font:800 13px "Montserrat"}
+.mobility-path h3{font-size:15px}
+.mobility-path p{margin:6px 0 0;color:#bdc9dc;font-size:12px;line-height:1.6}
+@media(max-width:900px){.mobility-grid{grid-template-columns:1fr;gap:36px}.mobility-section{padding:76px 0}}
+@media(max-width:560px){.mobility-section{padding:58px 0}.mobility-grid{gap:28px}.mobility-copy h2{font-size:32px}.mobility-path{padding:18px}.mobility-path-header{font-size:12px}}
 
 .language-switch{
   position:relative;
